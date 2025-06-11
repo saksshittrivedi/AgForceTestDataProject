@@ -1,0 +1,50 @@
+:host {
+    display: block;
+    background: linear-gradient(135deg, #f4f6f9, #e0e5ec);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* lightning-card override */
+lightning-card {
+    background: linear-gradient(145deg, #ffffff, #f4f6f9);
+    border-radius: 1rem;
+    /* box-shadow: 0 6px 12px rgba(0, 20, 100, 0.1); */
+    /* padding: 1rem; */
+}
+
+.slds-p-around_medium {
+    background: linear-gradient(180deg, #ffffff, #f0f4ff);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 20, 100, 0.08);
+}
+
+lightning-combobox,
+lightning-dual-listbox,
+lightning-input,
+lightning-textarea {
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+lightning-button {
+    /* --slds-c-button-brand-color-background: linear-gradient(90deg, #0070d2, #005fb2);
+    --slds-c-button-brand-color-border: #005fb2;
+    --slds-c-button-brand-color-text: #ffffff; */
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 112, 210, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+lightning-button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 112, 210, 0.35);
+}
+
+.slds-align_absolute-center {
+    margin-top: 2rem;
+
+}
