@@ -10,6 +10,10 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>CRM_Data_Seeder</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
 		<members>Create_Test_Data_Prompt_Template</members>
 		<name>GenAiPromptTemplate</name>
 	</types>
