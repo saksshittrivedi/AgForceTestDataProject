@@ -5,6 +5,10 @@
 		<name>ApexClass</name>
 	</types>
 	<types>
+		<members>Data_Creator</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
 		<members>Account.Test_Record__c</members>
 		<members>Contact.Test_Record__c</members>
 		<name>CustomField</name>
