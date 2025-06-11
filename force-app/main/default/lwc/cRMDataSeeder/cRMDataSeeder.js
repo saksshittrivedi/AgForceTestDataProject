@@ -25,11 +25,11 @@ export default class CRMDataSeeder extends NavigationMixin(LightningElement) {
     @track showRecordTypePicklist = false;
 
     objectToListMap = {
-        'Account': 'Accounts_Created_Today',
-        'Contact': 'Contacts_Created_Today',
-        'Opportunity': 'Opportunities_Created_Today',
-        'Lead': 'Lead_Created_Today',
-        'Case': 'Cases_Created_Today'
+        'Account': 'Test_Records_Created_Today',
+        // 'Contact': 'Contacts_Created_Today',
+        // 'Opportunity': 'Opportunities_Created_Today',
+        // 'Lead': 'Lead_Created_Today',
+        // 'Case': 'Cases_Created_Today'
     }
     // flowName = "Test_Data_Utility_Flow";
     // showFlow = false;

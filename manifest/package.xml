@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
-        <members>Create_Test_Data_Prompt_Template</members>
-        <name>GenAiPromptTemplate</name>
-    </types>
-    <version>63.0</version>
+	<types>
+		<members>*</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Account.Test_Record__c</members>
+		<members>Contact.Test_Record__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Create_Test_Data_Prompt_Template</members>
+		<name>GenAiPromptTemplate</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>Account.Test_Records_Created_Today</members>
+		<name>ListView</name>
+	</types>
+	<version>63.0</version>
 </Package>
