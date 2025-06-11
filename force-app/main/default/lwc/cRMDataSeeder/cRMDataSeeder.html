@@ -1,0 +1,69 @@
+<template>
+    <lightning-card title="Select object and fields to create data" icon-name="standard:record">
+        <div class="slds-p-around_medium">
+            <!-- Object Selection -->
+            <lightning-combobox
+                label="Select Object"
+                value={selectedObject}
+                options={objectOptions}
+                onchange={handleObjectChange}>
+            </lightning-combobox>
+
+            <template if:true={showFieldSelector}>
+
+                <template if:true={showRecordTypePicklist}>
+                    <lightning-combobox
+                        name="recordType"
+                        label="Select Record Type"
+                        options={recordTypeOptions}
+                        value={selectedRecordTypeId}
+                        onchange={handleRecordTypeChange}>
+                    </lightning-combobox>
+                </template>
+
+                <!-- Dual List Box -->
+                <lightning-dual-listbox
+                    name="fieldSelector"
+                    label="Select Fields"
+                    source-label="Available Fields"
+                    selected-label="Selected Fields"
+                    options={optionalFieldOptions}
+                    value={selectedOptionalFields}
+                    required-options={requiredFields}
+                    onchange={handleFieldSelection}>
+                </lightning-dual-listbox>
+
+                <!-- Numeric Input -->
+                <lightning-input
+                    label="Enter number of records (1-100)"
+                    type="number"
+                    value={numberOfRecords}
+                    onchange={handleNumericChange}
+                    max="100"
+                    min="1">
+                </lightning-input>
+
+                <lightning-textarea
+                    label="Prompt"
+                    placeholder="Please click on Generate Prompt button to generate the initial prompt!"
+                    value={generatedPrompt}
+                    readonly={readOnlyPrompt}
+                    class="prompt-textarea">
+                </lightning-textarea>
+
+                <div class="slds-align_absolute-center slds-p-around_small">
+                    <lightning-button variant="brand" label="Generate Prompt" disabled={generatePromptButtonDisabled} onclick={handleCreatePrompt} class="slds-m-right_small"></lightning-button>
+                    <lightning-button variant="brand" label="Create Test Data" disabled={createTestDataButtonDisabled} onclick={handleCreateTestData}></lightning-button>
+                    <!-- <template if:true={showFlow}>
+                        <lightning-flow
+                            flow-api-name={flowName}
+                            flow-input-variable={flowInputVariables}
+                            onstatuschange={handleFlowStatus}
+                        ></lightning-flow>
+                    </template> -->
+                </div>
+            </template>
+        </div>
+
+    </lightning-card>
+</template>
